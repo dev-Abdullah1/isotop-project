@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter project</title>
+
+    <!-- style css -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- bootsrap css -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- fontawesome css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+   <!-- google font -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<section id="navigation-bar" class="navigation">
+     <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <div class="logo">
+                  <img src="image/logo.svg" alt="">
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#Home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Store">Store</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <button class="btn btn-pink" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+     </div>
+</section>
+<!-- end navbar aria -->
+
+<!-- start home aria -->
+<section id="Home" class="Home">
+  <div class="container">
+    <div class="row">
+      <div class="home-content text-center mt-5 pt-5">
+        <h1>Welcome To <span>Grandma's</span> </h1>
+        <button class="btn btn-secondary btn-lg">Explore</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end home aria -->
+
+<!-- start about aria  -->
+<section id="About" class="About">
+  <div class="conatiner">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about-content ">
+          <h1>About <span>Us</span></h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!
+          </p>
+          <button class="btn btn-outline-dark btn-lg mt-4">Explore</button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-img_container my-5">
+          <img src="image/about.jpeg" class=" mx-auto d-block w-75" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end about aria -->
+
+<!-- start portfolio aria -->
+<section id="Store" class="Store">
+  <div class="container">
+    <div class="portfolio-title text-center mt-5">
+      <h1>Our<span>Store</span></h1>
+    </div>
+    <div class="row">
+      <div class="portfolio-btn text-center my-2">
+        <a href="#" class="btn btn-outline-secondary filter-btn active" data-filter="All">All</a>
+        <a href="#" class="btn btn-outline-secondary filter-btn" data-filter="Cakes">Cakes</a>
+        <a href="#" class="btn btn-outline-secondary filter-btn" data-filter="Cupcakes">Cupcakes</a>
+        <a href="#" class="btn btn-outline-secondary filter-btn" data-filter="Sweets">Sweets</a>
+        <a href="#" class="btn btn-outline-secondary filter-btn" data-filter="doughnut">doughnut</a>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+        <input type="text" class="form-control w-50" placeholder="item..." id="search-item" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <div class="row" id="storeItems">
+      <div class="col-lg-4 store-item Cakes" data-item="Cakes">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/cake-1.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Cakes item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 store-item Cakes" data-item="Cakes">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/cake-2.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Cakes item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 store-item Cakes" data-item="Cakes">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/cake-3.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Cakes item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-lg-4 store-item Cupcakes" data-item="Cupcakes">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/cupcake-1.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Cupcake item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 store-item Cupcakes" data-item="Cupcakes">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/cupcake-2.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Cupcake item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 store-item Cupcakes" data-item="Cupcakes">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/cupcake-3.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Cupcake item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-4">
+      <div class="col-lg-4 store-item Sweets" data-item="Sweets">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/sweets-1.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Sweet item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <div class="col-lg-4 store-item Sweets" data-item="Sweets">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/sweets-2.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Sweet item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 store-item Sweets" data-item="Sweets">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/sweets-3.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Sweet item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="col-lg-4 store-item doughnut" data-item="doughnut">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/doughnut-1.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Flower item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">20</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 store-item doughnut" data-item="doughnut">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/doughnut-2.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Flower item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">20</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 store-item doughnut" data-item="doughnut">
+        <div class="card">
+          <div class="img-container">
+            <img src="image/doughnut-3.jpeg" class="store-img img-fluid" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Flower item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">20</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end portfolio aria -->
+
+
+  <script src="app.js" type="">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
